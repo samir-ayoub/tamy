@@ -1,0 +1,491 @@
+/*
+Theme Name: Tamy
+Theme URI: https://wordpress.org/themes/twentyfifteen/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer.
+Version: 1.0
+
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #fff;
+    color: #AA6D80;
+    font-size: 18px;
+    border: 10px solid #fff;
+    background: #fff;
+    transition: all .8s ease-in-out;
+
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #AA6D80;
+*/    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #AA6D80;
+}
+
+a {
+  color: #000;
+}
+
+p {
+    color: #AA6D80;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/*header*/
+
+.header-site {
+    position: absolute;
+    width: 100%;
+    background: none;
+    border: none;
+}
+
+.header-site .navbar-brand, .header-site .navbar-nav>li>a {
+    color: #AA6D80;
+    font-size: 1em;
+    font-weight: 600;
+    transition: all .2s ease;
+}
+
+.header-site .navbar-nav>.active>a, .header-site .navbar-nav>.active>a:focus, .header-site .navbar-nav>.active>a:hover {
+    color: #AA6D80 !important;
+}
+
+.header-site .navbar-nav>li>a {
+    margin-right: 15px;
+}
+
+.header-site .navbar-brand:focus, .header-site .navbar-brand:hover, .header-site .navbar-nav>li>a:focus, .header-site .navbar-nav>li>a:hover {
+    color: #AA6D80;
+    text-decoration: underline;
+}
+
+.header-site .navbar-nav>.active>a, .header-site .navbar-nav>.active>a:focus, .header-site .navbar-nav>.active>a:hover {
+    color: #000;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+/*homepage*/
+.homepage {
+    background-image: url('public/images/bghome2.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: table;
+    margin-bottom: 250px;
+}
+
+.homepage h1 {
+    color: #fff;
+}
+
+.homepage .home-content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.page-wrap {
+    padding-top: 50px;
+}
+
+#trabalho01 {
+    background-image: url('../images/design-forest-folks-feature-255x180.jpg');
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lista-trabalhos {
+    margin: 0 0 200px;
+    min-height: 240px;
+}
+
+.item-trabalho {
+    padding: 0;
+
+}
+
+.item-trabalho .blog-picture {
+/*    height: 200px;
+*/  width: 100%;
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+}
+
+/*.item-trabalho a {
+    position: absolute;
+    left: 0px;
+    right: 0;
+    top: 0px;
+    text-align: center;
+    bottom: 0;
+    background: rgba(236, 223, 227,.6);
+    opacity: 0;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+*/
+.item-trabalho a {
+    position: absolute;
+    left: 0px;
+    right: 0;
+    top: -240px;
+    height: 240px;
+    text-align: center;
+    bottom: 0;
+    background: rgba(220, 240, 255,.8);
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.item-trabalho a span {
+    color: #097762;
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+    top: -200px;
+    transition: all .3s ease-in-out;
+
+}
+
+/*.item-trabalho:hover a {
+    opacity: 1;
+}*/
+
+.item-trabalho:hover a {
+    top: 0;
+}
+
+.item-trabalho:hover a span {
+    top: 100px;
+}
+
+.item-trabalho:hover img {
+    background: red;
+}
+
+.footer p {
+    font-size: .9em;
+    font-weight: 500;
+    margin-top: 15px;
+    float: left;
+}
+
+
+.social-icon {
+    display: block;
+    position: relative;
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.social-icon path {
+    stroke: #AA6D80;
+        fill: #AA6D80;
+}
+
+/*galeria de trabalhos*/
+
+.trabalhos p {
+        display: block;
+    float: left;
+}
+
+.blog-picture img {
+    height: 100%;
+    width: 100%;
+}
+
+.posts-wrap {
+    padding: 150px 0;
+    text-align: center;
+}
+
+.posts-wrap .descricao h2, .posts-wrap .descricao p, .posts-wrap .descricao .creditos {
+    /*max-width: 768px;*/
+    margin: 0 auto;
+}
+
+.posts-wrap .descricao .descricao-trabalho, .posts-wrap .descricao .creditos {
+    margin-bottom: 35px;
+
+}
+
+.posts-wrap .descricao .wp-caption-text {
+    font-size: .8em;
+    text-align: center;
+    font-weight: 500;
+    color: #AA6D80;
+}
+
+.posts-wrap .descricao .creditos li {
+    color: #AA6D80;
+    font-size: .6em;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    margin: 0 20px;
+}
+
+.posts-wrap .descricao .creditos li:before {
+    font-size: .6em;
+    font-weight: 300;
+    position: absolute;
+    left: -12px;
+    top: 5px;
+    content: ' ';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #AA6D80;
+}
+
+.posts-wrap .descricao h2 {
+    padding-bottom: .5em;
+    color: #AA6D80;
+}
+
+.posts-wrap .sample_trabalho p {
+    font-size: 1em;
+/*    margin: 100px 0;
+*/    font-weight: 400;
+}
+
+.posts-wrap .sample_trabalho img {
+    max-width: 100%;
+/*    padding-top: 3em;
+*/}
+
+.sample_trabalho, .sample_trabalho .wp-caption, .sample_trabalho .alignnone {
+    margin: 0 auto;
+    height: auto;
+}
+
+.contact-wrap-panel {
+    margin: 100px 0;
+}
+
+.btn.active.focus, 
+.btn.active:focus, 
+.btn.focus, .btn:active.focus, 
+.btn:active:focus,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus,
+.btn:focus {
+    outline: none;
+}
+
+.contact-wrap .photo-contact {
+    width: 100%;
+    height: auto;
+}
+
+.contact-wrap .bottom-md {
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.contact-wrap p {
+    margin-bottom: 20px;
+}
+
+.contact-wrap .row p {
+    margin: 0;
+}
+
+.contact-wrap a {
+    color: #AA6D80;
+    /* color: #45171D; */
+    font-weight: 600;
+    font-size: 24px;
+    transition: all .3s ease;
+}
+
+.filtro-tags {
+    text-align: center;
+}
+
+.filtro-tags a {
+    font-size: 1em;
+    font-weight: 600;
+    color: #45171D;
+    padding: 0 2em;
+}
+
+.filter-button-group {
+    text-align: right;
+    float: right;
+}
+
+.filter-button {
+    margin-left: 0;
+    margin-right: 0;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: transparent;
+    transition: all .2s ease;
+    text-decoration: underline;
+        font-size: 18px;
+    color: #AA6D80;
+    font-weight: 600;
+    font-size: 24px;
+    transition: all .3s ease;
+
+}
+
+.filter-button:hover, .filter-button.focus, .filter-button:focus, .filter-button.active.focus, .filter-button.active:focus, .filter-button.active:hover, .filter-button:active.focus, .filter-button:active:focus, .filter-button:active:hover, .open>.dropdown-toggle.filter-button.focus, .open>.dropdown-toggle.filter-button:focus, .open>.dropdown-toggle.filter-button:hover
+.btn-primary.active, .filter-button:active, .open>.dropdown-toggle.filter-button {
+    border: 1px solid transparent;
+    margin-bottom: 30px;
+    background-color: transparent;
+    text-decoration: underline;
+    color: #0ec19f;
+        -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+
+
+#contact-form {
+    margin-top: 30px;
+    font-size: 17px;
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+#contact-form .name, #contact-form .email {
+    padding-left: 63px;
+    border-bottom: 2px solid #AA6D80;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    width: 50%;
+    position: bottom: 10px;
+}
+
+#contact-form label {
+    position: absolute;
+    left: 0;
+}
+
+#contact-form .name label, #contact-form .email label {
+    bottom: 10px;
+}
+
+#contact-form .message label{
+    top: 15px;
+}
+
+#contact-form .inp-grp {
+    position: relative;
+    float: left;
+}
+
+
+
+#contact-form input, #contact-form textarea {
+    background: none;
+    width: 100%;
+    border: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: all .2s ease;
+}
+
+
+#contact-form .message {
+    width: 100%;
+    padding-left: 90px;
+}
+
+#contact-form .deco {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+}
+
+#contact-form .send-button {
+    position: relative;
+}
+
+#contact-form .send-button input {
+    background-image: url('public/images/send.svg');
+    background-position: 14px center;
+    background-repeat: no-repeat;
+    display: block;
+    background-color: #AA6D80;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    transition: all .2s ease;
+}
+
+#contact-form .send-button input:hover {
+    background-color: #0ec19f;
+}
+
+.contact-sent {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    display: none;
+    opacity: 0;
+}
+
